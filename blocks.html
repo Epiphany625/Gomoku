@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xinyang(Leo) Xu">
+    <meta name="description" content="Gomoku Project with winning detection mechanism">
+    <meta property="og:title" content="Leo's Gomoku">
+    <meta property="og:image" content="gomoku.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Epiphany625.github.io/blocks.html">
+    <title>Leo's Gomoku</title>
+    <link rel="stylesheet" href="blocks.css">
+</head>
+<body>
+    <div class="container">
+        <!-- the title of the page -->
+        <div id="title">
+            <h1 style="margin: 0px;">Leo's Gomoku!</h1>
+        </div>
+
+
+        <!-- the timer element-->
+        <div>
+            <div id="timer">
+                <h2 style="margin-bottom: 10px; margin-top: 10px;">
+                    <span id="minutes">00</span>
+                    :
+                    <span id="seconds">00</span>
+                </h2>
+            </div>
+            <div id="stepCounter"><h3></h3></div>
+        </div>
+        
+
+
+        <!-- use javascript to print the board-->
+        <div id="board"></div>
+        <!-- display which player's turn -->
+        <div id = "whoseTurn">
+            <b>Black's Turn!</b>
+        </div>
+        <br>
+        <div style="display: flex; justify-content: center">
+            <div class="buttons">
+                <div class="button-row">
+                    <button id="recall" onclick="recall()">Recall the Step</button>
+                    <button id="restart" onclick="startOver()">Start Over</button>
+                </div>
+                <div class="button-row">
+                    <button><a href="https://Epiphany625.github.io">Return to Xinyang's website</a></button>
+                </div>
+            </div>        
+        </div>
+        <div id="alert">
+            <div id="alert-box">
+                <p>Wrong Position Clicked. Please try again. </p>
+                <div><button onclick="clearAlert()">Continue</button></div>
+            </div>
+        </div>    
+
+    </div>
+    <script src="blocks.js"></script>
+</body>
+</html>

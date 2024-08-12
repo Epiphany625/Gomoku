@@ -1,0 +1,100 @@
+#board {
+    position: relative;
+    text-align: center;
+}
+
+#whoseTurn {
+    text-align: center;
+    font-size: 25px;
+}
+
+#title{
+    text-align: center;
+}
+
+#timer {
+    text-align: center;
+}
+
+#stepCounter{
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+.button-row{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 250px;
+}
+button{
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    
+}
+button:hover{
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+button:active{
+    background-color: #3e8e41; /* Even darker green on click */
+    transform: scale(1.02); /* Slightly larger on hover */
+}
+
+
+.unit {
+    border: 1.5px solid rebeccapurple;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    background-color:burlywood;
+}
+
+/* responsive design */
+@media (max-width: 500px) {
+    .unit{
+        height: 15px;
+        width: 15px;
+    }  
+    #whoseTurn{
+        font-size: 20px;
+    }          
+}
+.row{
+    margin: -6px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#alert{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    background-color: #0000007b;
+}
+
+#alert-box{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#alert-box > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
